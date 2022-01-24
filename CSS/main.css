@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/*----------------MENU---------------*/
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+/*----------------SLIDER---------------*/
+.carrusel-inner {
+    max-height: 35rem;
+}
+
+/*----------------SECCION NUESTRO EQUIPO, MAPA  ---------------*/
+.map {
+    background: url(../img/mapa.jpeg);
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+#local {
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/*----------------SECCION EQUIPO BOGOTA---------------*/
+#num-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+#num-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+}
+#num-local div:not(:first-child) {
+    padding-left: 20px;
+}
+#num-local p {
+    margin: 0;
+}
+
+/*----------------CONTACTOS BACKGROUND---------------*/
+#bg-contacto {
+    position: relative;
+    top: -130px;
+}
+#seccion-contacto {
+    background: #7bd3ee;
+    min-height: 560px;
+    position: relative;
+}
+
+/*----------------CONTACTOS BACKGROUND---------------*/
+#contenedor-formulario {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius: 5px;
+    max-width: 500px;
+}
+#titulo-formulario {
+    background: #e2d5d5;
+}
+
+/*----------------FOOTER---------------*/
+footer {
+    background: #fc712c;
+    text-align: center;
+}
+
+#iconos {
+    align-self: center;
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 8px;
+    color: #f3f3f3;
+}
+
+
+/*----------------MEDIA QUERIES PANTALLA SM---------------*/
+
+@media (max-width: 768px) {
+    #intro #equpo {
+        width: 90% !important;
+    }
+    #equipo p {
+        display: none;
+    }
+    .servicio-fila {
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contacto {
+        top: -110px;
+    }
+}
+
+/*----------------MEDIA QUERIES PANTALLA ANCHA---------------*/
+
+@media (max-width: 1200px) {
+    #local {
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .map { 
+        width: 90%;
+        padding-top: 150px;
+    }
+    
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+
+/*----------------MEDIA QUERIES PANTALLA EXTRA SM---------------*/
+@media (max-width: 576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
